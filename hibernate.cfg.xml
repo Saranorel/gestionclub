@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>
+        <property name="hibernate.connection.username">system</property>
+        <property name="hibernate.connection.password">Sara2005</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+        <property name="hibernate.c3p0.min_size">2</property>
+        <property name="hibernate.c3p0.max_size">10</property>
+        <property name="hibernate.c3p0.timeout">300</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <mapping class="gestionclublecteur.modele.Lecteur"/>
+        <mapping class="gestionclublecteur.modele.Livre"/>
+        <mapping class="gestionclublecteur.modele.SuiviLecture"/>
+        <mapping class="gestionclublecteur.modele.ResultatExamen"/>
+    </session-factory>
+</hibernate-configuration>

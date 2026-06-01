@@ -1,0 +1,531 @@
+/* ============================================================
+   zaz.css — Club de Lecture · Design System Professionnel
+   Police : Poppins (Google Fonts)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ============================================================
+   RESET GLOBAL
+   ============================================================ */
+.root,
+.label, .button, .text-field, .password-field,
+.combo-box, .combo-box-popup .list-cell,
+.table-view, .table-row-cell, .column-header,
+.tab-pane, .tab, .text-area, .separator,
+.dialog-pane, .dialog-pane .content {
+    -fx-font-family: "Poppins", "Segoe UI", "Arial", sans-serif;
+}
+
+.root {
+    -fx-background-color: #F0F2F5;
+}
+
+/* ============================================================
+   ECRAN DE CONNEXION — Deux panneaux
+   ============================================================ */
+
+/* Panneau gauche : identite visuelle (fond sombre dégradé) */
+.login-left {
+    -fx-background-color: linear-gradient(to bottom, #0F2235, #1B4A5A, #1B7C7F);
+    -fx-padding: 60px 40px;
+}
+
+.login-brand {
+    -fx-font-size: 34px;
+    -fx-font-weight: 700;
+    -fx-text-fill: white;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.login-brand-sub {
+    -fx-font-size: 14px;
+    -fx-text-fill: rgba(255,255,255,0.70);
+    -fx-font-weight: 400;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+    -fx-line-spacing: 4;
+}
+
+.login-badge {
+    -fx-background-color: rgba(255,255,255,0.15);
+    -fx-text-fill: white;
+    -fx-padding: 5px 14px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 12px;
+    -fx-font-weight: 500;
+    -fx-border-color: rgba(255,255,255,0.25);
+    -fx-border-radius: 20px;
+    -fx-border-width: 1px;
+}
+
+.login-version {
+    -fx-font-size: 11px;
+    -fx-text-fill: rgba(255,255,255,0.40);
+}
+
+/* Panneau droit : formulaire (fond blanc) */
+.login-right {
+    -fx-background-color: #F7F9FC;
+    -fx-padding: 0;
+}
+
+/* Carte du formulaire */
+.login-form-card {
+    -fx-background-color: white;
+    -fx-background-radius: 16px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.12), 24, 0, 0, 6);
+}
+
+/* En-tete de la carte */
+.login-form-header {
+    -fx-background-color: #1B7C7F;
+    -fx-background-radius: 16px 16px 0 0;
+    -fx-padding: 28px 32px 24px 32px;
+}
+
+.login-welcome {
+    -fx-font-size: 24px;
+    -fx-font-weight: 700;
+    -fx-text-fill: white;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.login-sub {
+    -fx-font-size: 13px;
+    -fx-text-fill: rgba(255,255,255,0.80);
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* Corps de la carte */
+.login-form-body {
+    -fx-padding: 28px 32px 20px 32px;
+}
+
+.login-field-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #344054;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+    -fx-padding: 0 0 3px 0;
+}
+
+.login-field {
+    -fx-pref-height: 44px;
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+    -fx-border-color: #D0D5DD;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1.5px;
+    -fx-padding: 0 14px;
+    -fx-font-size: 14px;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.login-field:focused {
+    -fx-border-color: #1B7C7F;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(27,124,127,0.20), 6, 0, 0, 0);
+}
+
+.login-error {
+    -fx-font-size: 12px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #B42318;
+    -fx-background-color: #FEF3F2;
+    -fx-background-radius: 6px;
+    -fx-border-color: #FDA29B;
+    -fx-border-radius: 6px;
+    -fx-border-width: 1px;
+    -fx-padding: 8px 12px;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* Pied de la carte */
+.login-form-footer {
+    -fx-background-color: #F9FAFB;
+    -fx-background-radius: 0 0 16px 16px;
+    -fx-padding: 14px 32px;
+    -fx-border-color: #F2F4F7 transparent transparent transparent;
+    -fx-border-width: 1px 0 0 0;
+}
+
+.login-footer {
+    -fx-font-size: 11px;
+    -fx-text-fill: #98A2B3;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* ============================================================
+   ONGLETS PRINCIPAUX
+   ============================================================ */
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #1E2A3A;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #1E2A3A;
+    -fx-pref-height: 46px;
+    -fx-padding: 0 24px;
+    -fx-cursor: hand;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: rgba(255,255,255,0.65);
+    -fx-font-weight: 600;
+    -fx-font-size: 13px;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #1B7C7F;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: white;
+}
+
+.tab-pane .tab:hover:selected {
+    -fx-background-color: #28374a;
+}
+
+/* ============================================================
+   BARRE D'OUTILS
+   ============================================================ */
+.toolbar {
+    -fx-background-color: white;
+    -fx-padding: 10px 16px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 4, 0, 0, 2);
+    -fx-border-color: transparent transparent #E5E8EC transparent;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.toolbar-label {
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #424968;
+}
+
+.stat-badge {
+    -fx-background-color: #1B7C7F;
+    -fx-text-fill: white;
+    -fx-padding: 4px 14px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+}
+
+.stat-badge-alt {
+    -fx-background-color: #424968;
+    -fx-text-fill: white;
+    -fx-padding: 4px 14px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+}
+
+/* ============================================================
+   TABLEAUX
+   ============================================================ */
+.table-view {
+    -fx-border-color: #E0E4EA;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.06), 8, 0, 0, 2);
+    -fx-background-color: white;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #1E2A3A;
+    -fx-background-radius: 10px 10px 0 0;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255,255,255,0.08) transparent rgba(255,255,255,0.08) transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-font-size: 13px;
+    -fx-padding: 10px 12px;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #F0F2F5 transparent;
+    -fx-font-size: 13px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #FAFBFC;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #EAF6F6;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #1B7C7F;
+    -fx-text-fill: white;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+.table-view .table-cell {
+    -fx-padding: 10px 14px;
+    -fx-alignment: center-left;
+}
+
+.table-view .label {
+    -fx-text-fill: #9AA3B0;
+    -fx-font-size: 13px;
+    -fx-font-style: italic;
+}
+
+/* ============================================================
+   FORMULAIRES DROITE
+   ============================================================ */
+.form-pane {
+    -fx-background-color: white;
+    -fx-border-color: #1B7C7F;
+    -fx-border-width: 0 0 0 4px;
+    -fx-padding: 24px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.08), 12, 0, -2, 0);
+    -fx-background-radius: 0 10px 10px 0;
+}
+
+.form-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #1E2A3A;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+    -fx-padding: 0 0 4px 0;
+}
+
+.field-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #5A6475;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.mention-preview {
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-padding: 4px 0 0 4px;
+}
+
+/* ============================================================
+   CHAMPS DE SAISIE
+   ============================================================ */
+.text-field, .password-field {
+    -fx-pref-height: 40px;
+    -fx-background-color: #F4F6F9;
+    -fx-background-radius: 8px;
+    -fx-border-color: #D0D5DD;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1.5px;
+    -fx-padding: 0 12px;
+    -fx-font-size: 13px;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #1B7C7F;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(27,124,127,0.18), 6, 0, 0, 0);
+}
+
+/* ============================================================
+   COMBO BOX
+   ============================================================ */
+.combo-box {
+    -fx-pref-height: 40px;
+    -fx-background-color: #F4F6F9;
+    -fx-background-radius: 8px;
+    -fx-border-color: #D0D5DD;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1.5px;
+    -fx-font-size: 13px;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.combo-box:focused, .combo-box:showing {
+    -fx-border-color: #1B7C7F;
+    -fx-background-color: white;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #1E2A3A;
+    -fx-font-size: 13px;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #D0D5DD;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 12, 0, 0, 4);
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #EAF6F6;
+    -fx-text-fill: #1B7C7F;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: #1B7C7F;
+    -fx-text-fill: white;
+}
+
+/* ============================================================
+   BOUTONS
+   ============================================================ */
+.button {
+    -fx-background-radius: 8px;
+    -fx-font-weight: 600;
+    -fx-font-size: 13px;
+    -fx-padding: 10px 18px;
+    -fx-cursor: hand;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.12), 4, 0, 0, 2);
+}
+
+.btn-primary {
+    -fx-background-color: #1B7C7F;
+    -fx-text-fill: white;
+}
+.btn-primary:hover {
+    -fx-background-color: #14636B;
+    -fx-effect: dropshadow(three-pass-box, rgba(27,124,127,0.35), 8, 0, 0, 3);
+}
+.btn-primary:pressed  { -fx-background-color: #0E4E55; -fx-effect: none; }
+.btn-primary:disabled { -fx-background-color: #A8D5D7; -fx-opacity: 0.7; }
+
+.btn-accent {
+    -fx-background-color: #DA9F7C;
+    -fx-text-fill: white;
+}
+.btn-accent:hover   { -fx-background-color: #C88860; -fx-effect: dropshadow(three-pass-box, rgba(218,159,124,0.35), 8, 0, 0, 3); }
+.btn-accent:pressed { -fx-background-color: #B5744C; -fx-effect: none; }
+
+.btn-danger {
+    -fx-background-color: #BEA17C;
+    -fx-text-fill: white;
+}
+.btn-danger:hover   { -fx-background-color: #A68A65; -fx-effect: dropshadow(three-pass-box, rgba(190,161,124,0.35), 8, 0, 0, 3); }
+.btn-danger:pressed { -fx-background-color: #8C7350; -fx-effect: none; }
+
+.btn-secondary {
+    -fx-background-color: #424968;
+    -fx-text-fill: white;
+}
+.btn-secondary:hover { -fx-background-color: #2E3450; }
+
+/* Bouton Export Excel — vert foncé */
+.btn-export {
+    -fx-background-color: #217346;
+    -fx-text-fill: white;
+}
+.btn-export:hover   { -fx-background-color: #185C37; -fx-effect: dropshadow(three-pass-box, rgba(33,115,70,0.35), 8, 0, 0, 3); }
+.btn-export:pressed { -fx-background-color: #0F3D24; -fx-effect: none; }
+.btn-export:disabled { -fx-background-color: #8FBD9D; -fx-opacity: 0.7; }
+
+/* Bouton Import Excel — orange */
+.btn-import {
+    -fx-background-color: #C05621;
+    -fx-text-fill: white;
+}
+.btn-import:hover   { -fx-background-color: #9C4518; }
+.btn-import:pressed { -fx-background-color: #7A3510; -fx-effect: none; }
+.btn-import:disabled { -fx-background-color: #DBA88F; -fx-opacity: 0.7; }
+
+/* ============================================================
+   BARRE DE STATUT
+   ============================================================ */
+.status-bar-bg {
+    -fx-background-color: #1E2A3A;
+    -fx-min-height: 30px;
+}
+
+.status-bar {
+    -fx-text-fill: rgba(255,255,255,0.75);
+    -fx-font-size: 12px;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* ============================================================
+   SEPARATEURS
+   ============================================================ */
+.separator .line {
+    -fx-border-color: #E5E8EC;
+    -fx-border-width: 0.5px;
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+.scroll-bar:vertical .track,
+.scroll-bar:horizontal .track {
+    -fx-background-color: #F0F2F5;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #C5CAD3;
+    -fx-background-radius: 4px;
+}
+
+.scroll-bar:vertical .thumb:hover,
+.scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #9AA3B0;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-padding: 0;
+    -fx-pref-height: 0;
+    -fx-pref-width: 0;
+}
+
+/* ============================================================
+   DIALOG / ALERTS
+   ============================================================ */
+.dialog-pane {
+    -fx-background-color: white;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #1E2A3A;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.dialog-pane .content {
+    -fx-font-size: 14px;
+    -fx-text-fill: #1E2A3A;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.dialog-pane .button-bar .button {
+    -fx-background-color: #1B7C7F;
+    -fx-text-fill: white;
+    -fx-background-radius: 8px;
+    -fx-font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.dialog-pane .button-bar .button:hover {
+    -fx-background-color: #14636B;
+}
